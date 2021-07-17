@@ -319,3 +319,80 @@ code {
   font-size: 18px;
 }
 
+.save__button {display: none;}
+
+@media (max-width: 992px) {
+  .save__button {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0 3px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 122px;
+  }
+  .todoForm input {
+    height: 35px;
+  }
+  .save__button {
+    top: 7px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 102px;
+  }
+  .todoForm input {
+    height: 33px;
+  }
+
+.save__button {
+    top: 6px;
+  }
+  .save__button img {
+    width: 23px;
+    height: 23px;
+  }
+  .todoInfo div:nth-child(2) {
+    margin: 0 32px
+  }
+  .todoInfo {
+    padding: 10px 0;
+  }
+  .todoInfo label {
+    padding: 2px
+  }
+  .todoInfo p {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .item__left {
+    margin-left: 8px;
+  }
+  .todoInfo button {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    font-size: 95px;
+  }
+  .todoInfo div:nth-child(2) {
+    margin: 0 10px
+  }
+  .todoInfo button {
+    white-space:normal;
+  }
+}
